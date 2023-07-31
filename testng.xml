@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Intel/LumaTestAF">
+        <classes>
+            <class name="LumaTests.BasketTest">
+                <methods>
+                    <include name="basketFunctionality"/>
+                </methods>
+            </class>
+            <class name="LumaTests.ComparisonProductsTest">
+                <methods>
+                    <include name="compareProductsTest"/>
+                </methods>
+            </class>
+            <class name="LumaTests.HomeButtonTest">
+                <methods>
+                    <include name="testHomePageNavigation"/>
+                </methods>
+            </class>
+            <class name="LumaTests.OrderFunctionalityTests">
+                <methods>
+                    <include name="searchEntireStoreInput"/>
+                    <include name="addCart"/>
+                </methods>
+            </class>
+            <class name="LumaTests.RegistrationFunctionalityTest">
+                <methods>
+                    <include name="loginWithValidCredentials"/>
+                    <include name="loginWithValidEmailPassword"/>
+                    <include name="loginWithInvalidUserName"/>
+                    <include name="loginWithInvalidPassword"/>
+                    <include name="accountInformationVerification"/>
+                </methods>
+            </class>
+            <class name="LumaTests.ShoppingOptionsFunctionalityTest">
+                <methods>
+                    <include name="shoppingOptionsFunctionalityTest"/>
+                </methods>
+            </class>
+            <class name="LumaTests.ShoppingOptionsTest">
+                <methods>
+                    <include name="shoppingOptionsSectionOnWomenPage"/>
+                    <include name="shoppingOptionsSectionOnMenPage"/>
+                </methods>
+            </class>
+            <class name="LumaTests.WhatsNewPageTest">
+                <methods>
+                    <include name="shoppingOptionsSectionOnWomenPage"/>
+                    <include name="testShopNewYogaPageNavigation"/>
+                    <include name="testPerformanceSportswearNewPageNavigation"/>
+                    <include name="testEcoCollectionNewPageNavigation"/>
+                </methods>
+            </class>
+            <class name="LumaTests.WishListTest">
+                <methods>
+                    <include name="wishList"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

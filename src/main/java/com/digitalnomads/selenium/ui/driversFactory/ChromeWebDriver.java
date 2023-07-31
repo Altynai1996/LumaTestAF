@@ -13,6 +13,7 @@ public class ChromeWebDriver {
         ChromeOptions options=new ChromeOptions();
         options.addArguments("--disable-extensions");
         options.addArguments("--no-sandbox");
+        options.addArguments("--headless");
 
         WebDriver driver=new ChromeDriver(options);
         driver.manage().window().maximize();
